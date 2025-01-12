@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepage"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/selectLocationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:text="Select a Location"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/locationRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectLocationText">
+
+        <RadioButton
+            android:id="@+id/pavagadaRadioButton"
+            android:layout_width="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Pavagada" />
+
+        <RadioButton
+            android:id="@+id/tipturRadioButton"
+            android:layout_width="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Tiptur" />
+
+        <RadioButton
+            android:id="@+id/raichurRadioButton"
+            android:layout_width="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Raichur" />
+
+        <RadioButton
+            android:id="@+id/mysoreRadioButton"
+            android:layout_width="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Mysore" />
+
+        <RadioButton
+            android:id="@+id/bengaluruRadioButton"
+            android:layout_width="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Bengaluru" />
+
+        <RadioButton
+            android:id="@+id/hyderabadRadioButton"
+            android:layout_width="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Hyderabad" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:textSize="20dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/locationRadioGroup" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="213dp"
+        android:layout_height="71dp"
+        android:background="@color/design_default_color_surface"
+        android:text="Welcome to Foood Blog"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/selectLocationText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+</androidx.constraintlayout.widget.ConstraintLayout>
